@@ -11,7 +11,7 @@ public class OopMain {
 
             String number1 = sc.next();
             try {
-                oop.insertnumber1(number1);
+                oop.insertNumber1(number1,1);
             } catch (Exception e) {
                 System.out.println(e.getMessage());
                 continue;
@@ -20,23 +20,22 @@ public class OopMain {
             System.out.println("부호 입력");
             String booho = sc.next();
             try {
-                oop.insertbooho(booho);
+                oop.insertBooho(booho);
             } catch (Exception e) {
                 System.out.println(e.getMessage());
                 continue;
             }
+
             System.out.println("두번째 숫자입력");
             String number2 = sc.next();
             try {
-                oop.insertnumber2(number2);
+                oop.insertNumber1(number2,2);
             } catch (Exception e) {
                 System.out.println(e.getMessage());
                 continue;
             }
 
-
             oop.claculate();
-
             boolean areyoucontinue = true;
             while (areyoucontinue) {
                 System.out.println("계산을 종료합니까?");
@@ -44,7 +43,9 @@ public class OopMain {
                 if (stop.equals("exit")) {
                     System.out.println("계산을 종료합니다");
                     System.out.println("계산 로그를 확인합니다.");
-                    oop.checkresults();
+                    oop.checkResults();
+                    oop.removeresults();
+                    oop.checkResults();
                     System.exit(1);
                 } else {
                     System.out.println("새로운 계산을 시작합니다.");
@@ -52,5 +53,6 @@ public class OopMain {
                 }
             }
         }
+
     }
 }
