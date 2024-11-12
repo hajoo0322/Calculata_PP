@@ -5,25 +5,46 @@ import java.util.Scanner;
 public class OopMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        while(true) {
+        Claculater_Oop oop = new Claculater_Oop();
+        while (true) {
             System.out.println("첫번째 숫자입력");
 
-            int num1= sc.nextInt();
-            System.out.println("부호 입력");
-            char booho = sc.next().charAt(0);
-            System.out.println("두번째 숫자입력");
-            int num2= sc.nextInt();
+            String number1 = sc.next();
+            try {
+                oop.insertnumber1(number1);
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+                continue;
+            }
 
-            Claculater_Oop oop = new Claculater_Oop(num1, booho, num2);
+            System.out.println("부호 입력");
+            String booho = sc.next();
+            try {
+                oop.insertbooho(booho);
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+                continue;
+            }
+            System.out.println("두번째 숫자입력");
+            String number2 = sc.next();
+            try {
+                oop.insertnumber2(number2);
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+                continue;
+            }
+
+
             oop.claculate();
 
             boolean areyoucontinue = true;
-            while(areyoucontinue){
+            while (areyoucontinue) {
                 System.out.println("계산을 종료합니까?");
                 String stop = sc.next();
-                if (stop.equals("exit")){
-                    System.out.println("계산을 종료합니다 안녕...");
+                if (stop.equals("exit")) {
+                    System.out.println("계산을 종료합니다");
+                    System.out.println("계산 로그를 확인합니다.");
+                    oop.checkresults();
                     System.exit(1);
                 } else {
                     System.out.println("새로운 계산을 시작합니다.");
