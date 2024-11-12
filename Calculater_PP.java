@@ -11,6 +11,8 @@ public class Calculater_PP {
                 System.out.println("양의 정수를 입력하시오");
                 break;
             }
+
+
             String booho = sc.next();
             int num2 = sc.nextInt();
             if (num2 < 0) {
