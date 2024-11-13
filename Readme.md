@@ -15,6 +15,21 @@
 Click[here](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FrCqeZ%2FbtsKGSi4dmH%2FjsBrg2B5dnHeYh5lqIcGAk%2Fimg.png)
 
 
+## ⌚️ 개발 기간
+2024-11-12 ~ 진행중
+  
+  >와이어 프레임설계  
+  
+  >리펙토링  
+  
+  >와이어 프레임 재설계  
+
+  >Java 코드 작성  
+  
+  >Readme 작성
+
+  >진행중~
+
 
 ## 프로젝트
 입력된 두 값을 더하고 저장하는 프로그램입니다.
@@ -39,3 +54,10 @@ Calculater 클래스는 Calculate 인터페이스에 의존성을 주입하고 (
 계산결과를 리턴해주는 역할을 합니다.
 
 Calculate 인터페이스를 구현하는 4개의 계산 로직 클래스가 있으며 제네릭을 사용함으로 타입안정성을 조금 더 향상 시켜주었습니다.
+
+
+![Build Status](https://img.shields.io/github/workflow/status/hajoo0322/Calculata_PP/CI?label=build&logo=github)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Open Issues](https://img.shields.io/github/issues/yourusername/yourrepo.svg)
+
+
