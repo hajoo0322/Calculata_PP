@@ -1,10 +1,10 @@
 package calculater_sparta;
 
-public class MinusNumber implements Calculate{
+public class MinusNumber implements Calculate<Double>{
 
 
     @Override
-    public double calculate() {
+    public Double calculate() {
         return Database.number1-Database.number2;
     }
 }

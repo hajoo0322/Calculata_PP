@@ -8,5 +8,9 @@ public class SaveResults {
         database.addData(sum);
     }
 
+    public void outputData(){
+        System.out.println(database.datas);
+    }
+
 
 }

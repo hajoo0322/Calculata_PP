@@ -1,7 +1,7 @@
 package calculater_sparta;
 
 public class Calculater {
-    Calculate calculate;
+    Calculate<Double> calculate;
 
 
     public void selectCalculater(){
@@ -17,7 +17,10 @@ public class Calculater {
     }
 
     public double calculate(){
-        return calculate.calculate();
+        double calculate1 = calculate.calculate();
+        System.out.println("계산결과는 = "+calculate1);
+        System.out.println(calculate1+"결과를 데이터베이스에 저장합니다.");
+        return calculate1;
     }
 
 }

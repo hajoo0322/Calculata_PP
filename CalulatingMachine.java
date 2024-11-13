@@ -7,7 +7,6 @@ public class CalulatingMachine {
     public static boolean start() throws BadInputException {
         Check parser = new Check();
         Scanner scanner = new Scanner(System.in);
-        Database results = new Database();
 
         System.out.println("숫자를 입력하세요");
         String num1 = scanner.next();
@@ -25,6 +24,14 @@ public class CalulatingMachine {
         saveResults.calculater.selectCalculater();
         saveResults.saveData(saveResults.calculater.calculate());
 
+        System.out.println("종료하려면(exit)");
+        String isStop = scanner.next();
+
+        if (isStop.equals("exit")){
+            System.out.println("계산결과를 출력합니다.");
+            saveResults.outputData();
+            return false;
+        }
 
         return true;
     }

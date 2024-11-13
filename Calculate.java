@@ -1,6 +1,6 @@
 package calculater_sparta;
 
-public interface Calculate {
+public interface Calculate<E> {
 
-    double calculate();
+    E calculate();
 }

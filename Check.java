@@ -1,8 +1,7 @@
 package calculater_sparta;
 
 public class Check {
-    private static final String OPERATION_REG = "[+\\-*/]";
-    private static final String NUMBER_REG = "^[0-9]*$";
+    private static final String NUMBER_REG = "^[0-9]*\\.?[0-9]+$";
 
     public void checkNum(String num1, int index) throws BadInputException {
       if (index==1){
@@ -16,16 +15,16 @@ public class Check {
         if (num1.matches(NUMBER_REG)) {
             if (first) {
                 Database.number1= Double.parseDouble(num1);
-            }else if(first){
+            }else{
                 Database.number2= Double.parseDouble(num1);
-            }else {
-                throw new BadInputException("숫자");
             }
+        }else {
+            throw new BadInputException("숫자");
         }
     }
 
     public void checkSign(String sign) throws BadInputException {
-        if (sign.matches(OPERATION_REG)) {
+        if (OperatorType.isSame(sign)) {
             for (OperatorType value : OperatorType.values()) {
                 if (value.name().equals(sign)) {
                     Database.sign = sign;

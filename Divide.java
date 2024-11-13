@@ -1,10 +1,9 @@
 package calculater_sparta;
 
-public class Divide implements Calculate{
-
+public class Divide implements Calculate<Double>{
 
     @Override
-    public double calculate() {
+    public Double calculate() {
         return Database.number1/Database.number2;
     }
 }
