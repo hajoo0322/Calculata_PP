@@ -25,7 +25,7 @@ public class CalculatingMachine{
         // 클라이언트
     }
 }
-
+```
 CalculatingMachine을 클라이언트 클래스로 지정해서 객체들의 기능을 이용하도록 합니다.
 
 다이어 그램에 표시했듯이 CalculatingMachine은 Check과 SaveResults
