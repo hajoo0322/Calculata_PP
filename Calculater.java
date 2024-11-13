@@ -3,7 +3,6 @@ package calculater_sparta;
 public class Calculater {
     Calculate<Double> calculate;
 
-
     public void selectCalculater(){
         if (Database.sign.equals("ADD")){
             calculate = new AddNumber();

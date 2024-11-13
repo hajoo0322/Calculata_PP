@@ -2,6 +2,7 @@ package calculater_sparta;
 
 public class AddNumber implements Calculate<Double> {
 
+
     @Override
     public Double calculate() {
 

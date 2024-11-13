@@ -14,6 +14,7 @@ public class Check {
     private void saveNumber(String num1, boolean first) throws BadInputException {
         if (num1.matches(NUMBER_REG)) {
             if (first) {
+
                 Database.number1= Double.parseDouble(num1);
             }else{
                 Database.number2= Double.parseDouble(num1);

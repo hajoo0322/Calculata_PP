@@ -27,10 +27,13 @@ public class CalculatingMachine {
         System.out.println("종료하려면(exit)");
         String isStop = scanner.next();
 
+
         //exit 를 입력하면 저장된 계산결과를 모두출력
         if (isStop.equals("exit")){
+            System.out.println("숫자를 입력해주세요 입력한값보다 큰기록의 계산결과만 출력합니다.");
+            double comparisonValue = scanner.nextDouble();
             System.out.println("계산결과를 출력합니다.");
-            saveResults.outputData();
+            saveResults.database.compare(comparisonValue);
             return false;
         }
 

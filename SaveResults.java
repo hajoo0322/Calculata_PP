@@ -9,6 +9,7 @@ public class SaveResults {
     }
 
     public void outputData(){
+        database.sort();
         System.out.println(database.datas);
     }
 }

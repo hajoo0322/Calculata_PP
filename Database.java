@@ -2,6 +2,7 @@ package calculater_sparta;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class Database {
     static double number1;
@@ -11,5 +12,9 @@ public class Database {
 
     public void addData(double sum){
         datas.add(sum);
+    }
+
+    public void compare(double value) {
+        datas.stream().filter(a -> a > value).forEach(System.out::println);
     }
 }
