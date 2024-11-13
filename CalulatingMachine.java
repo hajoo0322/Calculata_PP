@@ -22,8 +22,8 @@ public class CalulatingMachine {
         parser.checkNum(num2,2);
 
         SaveResults saveResults = new SaveResults();
-        saveResults.selectCalculater();
-
+        saveResults.calculater.selectCalculater();
+        saveResults.saveData(saveResults.calculater.calculate());
 
 
         return true;

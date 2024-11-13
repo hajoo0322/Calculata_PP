@@ -1,9 +1,9 @@
 package calculater_sparta;
 
-public class MultiplyNumber<E extends Number> implements Calculate<E> {
+public class MultiplyNumber implements Calculate {
 
     @Override
-    public double calculate(E num1, E num2) {
-        return 0;
+    public double calculate() {
+        return Database.number1*Database.number2;
     }
 }
