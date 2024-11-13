@@ -58,6 +58,6 @@ Calculate 인터페이스를 구현하는 4개의 계산 로직 클래스가 있
 
 ![Build Status](https://img.shields.io/github/workflow/status/hajoo0322/Calculata_PP/CI?label=build&logo=github)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Open Issues](https://img.shields.io/github/issues/yourusername/yourrepo.svg)
+![Open Issues](https://img.shields.io/github/issues/hajoo0322/Calculata_PP.svg)
 
 
