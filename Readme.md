@@ -6,9 +6,9 @@
 <div style="width: 10px; height: 10px; background-color: green; border-radius: 50%; display: inline-block;"></div> Online
 
 
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=YourGitHubUsername&show_icons=true&theme=radical)
+![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=hajoo0322&show_icons=true&theme=radical)
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=YourGitHubUsername&theme=dark)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=hajoo0322&theme=dark)
 
 
 ## 클래스 다이어그램
