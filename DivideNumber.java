@@ -1,6 +1,6 @@
 package calculater_sparta;
 
-public class Divide implements Calculate<Double>{
+public class DivideNumber implements Calculate<Double>{
 
     @Override
     public Double calculate() {

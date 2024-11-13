@@ -10,7 +10,7 @@ public class Check {
           saveNumber(num1,false);
       }
     }
-
+    //예외 처리 true 면 1번에 기록 false면 2번에 기록
     private void saveNumber(String num1, boolean first) throws BadInputException {
         if (num1.matches(NUMBER_REG)) {
             if (first) {
@@ -22,7 +22,7 @@ public class Check {
             throw new BadInputException("숫자");
         }
     }
-
+    //알맞은 부호를 입력했는지 확인
     public void checkSign(String sign) throws BadInputException {
         if (OperatorType.isSame(sign)) {
             for (OperatorType value : OperatorType.values()) {

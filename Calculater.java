@@ -12,7 +12,7 @@ public class Calculater {
         } else if (Database.sign.equals("MULTIPLY")) {
             calculate = new MultiplyNumber();
         }else if(Database.sign.equals("DIVIDE")){
-            calculate = new Divide();
+            calculate = new DivideNumber();
         }
     }
 

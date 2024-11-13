@@ -11,6 +11,4 @@ public class SaveResults {
     public void outputData(){
         System.out.println(database.datas);
     }
-
-
 }

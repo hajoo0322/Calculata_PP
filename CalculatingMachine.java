@@ -3,7 +3,7 @@ package calculater_sparta;
 
 import java.util.Scanner;
 
-public class CalulatingMachine {
+public class CalculatingMachine {
     public static boolean start() throws BadInputException {
         Check parser = new Check();
         Scanner scanner = new Scanner(System.in);
@@ -27,6 +27,7 @@ public class CalulatingMachine {
         System.out.println("종료하려면(exit)");
         String isStop = scanner.next();
 
+        //exit 를 입력하면 저장된 계산결과를 모두출력
         if (isStop.equals("exit")){
             System.out.println("계산결과를 출력합니다.");
             saveResults.outputData();
