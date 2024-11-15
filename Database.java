@@ -17,4 +17,10 @@ public class Database {
     public void compare(double value) {
         datas.stream().filter(a -> a > value).forEach(System.out::println);
     }
+
+
+    public void removeFirst(){
+        datas.remove(0);
+    }
+
 }
