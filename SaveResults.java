@@ -8,8 +8,4 @@ public class SaveResults {
         database.addData(sum);
     }
 
-    public void outputData(){
-        database.sort();
-        System.out.println(database.datas);
-    }
 }
