@@ -1,4 +1,6 @@
-package calculater_sparta;
+package calculater_sparta.repository;
+
+import calculater_sparta.exceptionHandling.BadInputException;
 
 public class Check {
     private static final String NUMBER_REG = "^[0-9]*\\.?[0-9]+$";

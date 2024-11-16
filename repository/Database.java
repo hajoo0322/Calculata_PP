@@ -1,13 +1,12 @@
-package calculater_sparta;
+package calculater_sparta.repository;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
 
 public class Database {
-    static double number1;
-    static double number2;
-    static String sign;
+    public static double number1;
+    public static double number2;
+    public static String sign;
     static List<Double> datas = new ArrayList<>();
 
     public void addData(double sum){

@@ -1,4 +1,6 @@
-package calculater_sparta;
+package calculater_sparta.performCalculations;
+
+import calculater_sparta.repository.Database;
 
 public class AddNumber implements Calculate<Double> {
 

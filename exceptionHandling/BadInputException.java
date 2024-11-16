@@ -1,4 +1,4 @@
-package calculater_sparta;
+package calculater_sparta.exceptionHandling;
 
 public class BadInputException extends Exception{
     public BadInputException(String type){

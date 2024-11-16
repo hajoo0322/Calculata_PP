@@ -1,5 +1,8 @@
-package calculater_sparta;
+package calculater_sparta.service;
 
+
+import calculater_sparta.repository.Check;
+import calculater_sparta.exceptionHandling.BadInputException;
 
 import java.util.Scanner;
 
@@ -21,7 +24,7 @@ public class CalculatingMachine {
         parser.checkNum(num2,2);
 
         SaveResults saveResults = new SaveResults();
-        saveResults.calculater.selectCalculater();
+        saveResults.selectCalculater();
         saveResults.saveData(saveResults.calculater.calculate());
 
         System.out.println("종료하려면(exit)");
