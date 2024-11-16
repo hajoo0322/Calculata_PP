@@ -16,7 +16,7 @@ Click[here](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%
 
 
 ## ⌚️ 개발 기간
-2024-11-12 ~ 진행중
+2024-11-12 ~ 11-17
   
   >와이어 프레임설계  
   
@@ -28,7 +28,9 @@ Click[here](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%
   
   >Readme 작성
 
-  >진행중~
+  >리펙토링 완료
+
+  >11-17 개발 완료
 
 
 ## 프로젝트
@@ -48,11 +50,14 @@ CalculatingMachine을 클라이언트 클래스로 지정해서 객체들의 기
 
 Check 클래스는 Database 클래스에 입력된 값을 저장해줍니다.
 
-SaveResults 클래스는 데이터베이스에 결과 값을 저장하고 Calculater 클래스를 의존하는 것으로 클라이언트에서 SaveResults를 통해서 Calculater의 기능을 호출할수 있게 했습니다.
+SaveResults 클래스는 데이터베이스에 결과 값을 저장하고 Calculater 클래스를 의존하는 것으로 클라이언트에서
+SaveResults를 통해서 Calculater의 기능을 호출할수 있게 했습니다.
+  
+-추가 SaveResults가 의존성을 주입하도록 오브젝트 의존관계를 변경
 
-Calculater 클래스는 Calculate 인터페이스에 의존성을 주입하고 (정적 의존성 주입)
-계산결과를 리턴해주는 역할을 합니다.
-
+~~Calculater 클래스는 Calculate 인터페이스에 의존성을 주입하고 (정적 의존성 주입)
+계산결과를 리턴해주는 역할을 합니다.~~
+Calculater 클래스는 계산을 요청하는 책임만 가지게됩니다.
 Calculate 인터페이스를 구현하는 4개의 계산 로직 클래스가 있으며 제네릭을 사용함으로 타입안정성을 조금 더 향상 시켜주었습니다.
 
 
