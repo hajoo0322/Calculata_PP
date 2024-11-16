@@ -7,7 +7,7 @@ import calculater_sparta.performCalculations.MultiplyNumber;
 import calculater_sparta.repository.Database;
 
 public class SaveResults {
-    Calculater calculater = new Calculater(new AddNumber());
+    Calculater calculater;
     public Database database = new Database();
 
     public void saveData(double sum) {
