@@ -27,7 +27,7 @@ public class SaveResults {
         } else if (database.getSign().equals("MULTIPLY")) {
             calculater = new Calculater(new MultiplyNumber());
         }else if(database.getSign().equals("DIVIDE")){
-            if (database.getNumber1() == 0 || database.getNumber2() == 0) {
+            if (database.getNumber2() == 0) {
                 throw new BadInputException();
             }
             calculater = new Calculater(new DivideNumber());
