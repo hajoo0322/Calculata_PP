@@ -8,7 +8,7 @@ import calculater_sparta.repository.Database;
 
 public class SaveResults {
     Calculater calculater;
-    Database database = new Database();
+    Database database;
 
     public SaveResults(Database database) {
         this.database = database;
