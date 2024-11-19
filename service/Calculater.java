@@ -10,8 +10,8 @@ public class Calculater {
         this.calculate = calculate;
     }
 
-    public double calculate(){
-        double calculate1 = calculate.calculate();
+    public double calculate(double num1,double num2){
+        double calculate1 = calculate.calculate(num1,num2);
         System.out.println("계산결과는 = "+calculate1);
         System.out.println(calculate1+"결과를 데이터베이스에 저장합니다.");
         return calculate1;

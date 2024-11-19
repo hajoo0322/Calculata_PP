@@ -4,7 +4,7 @@ import calculater_sparta.repository.Database;
 
 public class AddNumberInteger implements Calculate<Integer>{
     @Override
-    public Integer calculate() {
-        return (int)(Database.number1+Database.number2);
+    public Integer calculate(double number1, double number2) {
+        return (int)(number1+number2);
     }
 }

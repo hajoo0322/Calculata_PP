@@ -5,9 +5,9 @@ import calculater_sparta.repository.Database;
 public class AddNumber implements Calculate<Double> {
 
     @Override
-    public Double calculate() {
+    public Double calculate(double number1, double number2) {
 
-        return Database.number1+Database.number2;
+        return number1+number2;
     }
 }
 

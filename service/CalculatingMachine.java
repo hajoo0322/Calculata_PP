@@ -3,29 +3,31 @@ package calculater_sparta.service;
 
 import calculater_sparta.repository.Check;
 import calculater_sparta.exceptionHandling.BadInputException;
+import calculater_sparta.repository.Database;
 
 import java.util.Scanner;
 
 public class CalculatingMachine {
     public static boolean start() throws BadInputException {
-        Check parser = new Check();
+        Database database = new Database();
+        Check check = new Check(database);
         Scanner scanner = new Scanner(System.in);
         System.out.println("숫자를 입력하세요");
 
         String num1 = scanner.next();
-        parser.checkNum(num1,1);
+        check.checkNum(num1,1);
         System.out.println("ADD MINUS MULTIPLY DIVIDE 연산을 선택하세요");
         String sign = scanner.next();
-        parser.checkSign(sign);
+        check.checkSign(sign);
 
         System.out.println("숫자를 입력하세요");
         String num2 = scanner.next();
-        parser.checkNum(num2,2);
+        check.checkNum(num2,2);
 
-        SaveResults saveResults = new SaveResults();
+        SaveResults saveResults = new SaveResults(database);
 
         saveResults.selectCalculater();
-        saveResults.saveData(saveResults.calculater.calculate());
+        saveResults.saveData(saveResults.orderCalculate());
 
         System.out.println("종료하려면(exit)");
         String isStop = scanner.next();

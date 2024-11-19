@@ -8,22 +8,31 @@ import calculater_sparta.repository.Database;
 
 public class SaveResults {
     Calculater calculater;
-    public Database database = new Database();
+    Database database = new Database();
+
+    public SaveResults(Database database) {
+        this.database = database;
+    }
 
     public void saveData(double sum) {
         database.addData(sum);
     }
 
     public void selectCalculater(){
-        if (Database.sign.equals("ADD")){
+        if (database.getSign().equals("ADD")){
             calculater = new Calculater(new AddNumber());
-        } else if (Database.sign.equals("MINUS")) {
+        } else if (database.getSign().equals("MINUS")) {
             calculater = new Calculater(new MinusNumber());
-        } else if (Database.sign.equals("MULTIPLY")) {
+        } else if (database.getSign().equals("MULTIPLY")) {
             calculater = new Calculater(new MultiplyNumber());
-        }else if(Database.sign.equals("DIVIDE")){
+        }else if(database.getSign().equals("DIVIDE")){
             calculater = new Calculater(new DivideNumber());
         }
     }
 
+    public double orderCalculate() {
+
+      return calculater.calculate(database.getNumber1(), database.getNumber2());
+
+    }
 }

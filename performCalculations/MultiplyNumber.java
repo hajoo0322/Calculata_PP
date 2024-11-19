@@ -5,7 +5,7 @@ import calculater_sparta.repository.Database;
 public class MultiplyNumber implements Calculate<Double> {
 
     @Override
-    public Double calculate() {
-        return Database.number1*Database.number2;
+    public Double calculate(double number1, double number2) {
+        return number1*number2;
     }
 }
