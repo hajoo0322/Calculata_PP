@@ -25,4 +25,5 @@ public class SaveResults {
             calculater = new Calculater(new DivideNumber());
         }
     }
+
 }

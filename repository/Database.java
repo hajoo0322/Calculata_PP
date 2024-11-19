@@ -9,12 +9,18 @@ public class Database {
     public static String sign;
     static List<Double> datas = new ArrayList<>();
 
+    public Database() {
+    }
+
     public void addData(double sum){
         datas.add(sum);
     }
 
     public void compare(double value) {
-        datas.stream().filter(a -> a > value).forEach(System.out::println);
+
+        datas.stream()
+                .filter(a -> a > value)
+                .forEach(System.out::println);
     }
 
 

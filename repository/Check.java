@@ -14,9 +14,9 @@ public class Check {
     }
     //예외 처리 true 면 1번에 기록 false면 2번에 기록
     private void saveNumber(String num1, boolean first) throws BadInputException {
+
         if (num1.matches(NUMBER_REG)) {
             if (first) {
-
                 Database.number1= Double.parseDouble(num1);
             }else{
                 Database.number2= Double.parseDouble(num1);
@@ -34,7 +34,7 @@ public class Check {
                 }
             }
         } else {
-            throw new BadInputException("알맞은 부호를 입력하시오");
+            throw new BadInputException("부호");
         }
     }
 

@@ -7,8 +7,11 @@ public class Main {
     public static void main(String[] args) throws BadInputException {
         boolean gostop = true;
         while(gostop) {
-            gostop = CalculatingMachine.start();
-
+            try {
+                gostop = CalculatingMachine.start();
+            } catch (BadInputException e) {
+                System.out.println(e.getMessage());
+            }
         }
     }
 }
