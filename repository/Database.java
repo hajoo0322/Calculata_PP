@@ -7,7 +7,7 @@ public class Database {
     private double number1;
     private double number2;
     private String sign;
-    static List<Double> datas = new ArrayList<>();
+    private List<Double> datas = new ArrayList<>();
 
     public double getNumber1() {
         return number1;

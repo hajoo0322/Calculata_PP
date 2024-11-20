@@ -7,7 +7,7 @@ public class Check {
     Database database;
 
     public Check(Database database) {
-        this.database = database;
+        this.database = database; //여기가 디펜던시 인젝션
     }
 
     public void checkNum(String num1, int index) throws BadInputException {
